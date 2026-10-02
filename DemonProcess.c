@@ -30,7 +30,7 @@ int process_injection(int pid) {
 		perror(RED "waitpid error" RESET);
 		return 1;
 	}
-	printf(GREEN "[!] The process is paused!\n" RESET);
+	printf(GREEN "[+] The process is paused!\n" RESET);
 	
 	printf(GREEN "[+] Getting RIP value...\n" RESET);
 	struct user_regs_struct regs;
